@@ -1,6 +1,6 @@
 using Plots
 gr(size=(800,600))
-include("Double-Spring.jl")
+include("Double-Spring-Simple.jl")
 
 @gif for i = 1:size(D,2)
     x1 = D[1,i]
