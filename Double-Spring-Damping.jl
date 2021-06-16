@@ -1,4 +1,4 @@
-include("Runge-Kutta.jl")
+include("Runge-Kutta-Col.jl")
 
 m₁, m₂ = 1.0, 1.0
 δ₁, δ₂ = 0.1, 0.2 #Damping constants of the first and second block
@@ -16,4 +16,4 @@ l₂ = x₀₂ - x₀₁ - w₁ - r₂
 y₀ = [x₀₁; x₀₂; v₀₁; v₀₂]
 t0, tf = 0.0, 60
 
-t, D = rungekutta4(t0, tf, y₀, F)
+t, D = rungekutta4col(t0, tf, y₀ , m₁, m₂, F)
