@@ -1,6 +1,6 @@
 using Plots
 gr(size=(800,400))
 
-include("Double-Spring.jl")
+include("Double-Spring-Simple.jl")
 
 plot(D[1,:], D[2,:], leg=false)
