@@ -1,4 +1,4 @@
-include("Runge-Kutta.jl")
+include("Runge-Kutta-Col.jl")
 
 m₁, m₂ = 1.0, 2.0  #Mass of the first and second block
 w₁ = 0.1           #Width of the first block
