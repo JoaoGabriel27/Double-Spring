@@ -1,4 +1,4 @@
-include("Runge-Kutta-Col.jl")
+include("Runge-Kutta-Collisions.jl")
 
 m₁, m₂ = 1.0, 1.0
 δ₁, δ₂ = 0.0, 0.0
