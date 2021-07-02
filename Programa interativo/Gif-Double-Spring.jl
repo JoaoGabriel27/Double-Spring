@@ -12,7 +12,7 @@ z = cos.(mola_n * 2π * t)
 δ = 0.1
 Δ = 1 - 2δ
 
-@gif for i = 1:size(D,2)
+anim = @animate for i = 1:size(D,2)
     x1 = D[1,i]
     x2 = D[2,i]
     xa1 = 0.02
@@ -33,4 +33,15 @@ z = cos.(mola_n * 2π * t)
     scatter!([x2 + 0.57], [0.27], c=:red, ms=18, m=:square)
     xlims!(-0.5,7.0)
     ylims!(0.0, 1.0)
-end every 1
+    print(i)
+end every 2
+
+gif(anim)
+
+print("Você quer salvar esse gif? (0=não,1=sim) \n")
+u = readline()
+if u == "1"
+    print("Deseja salvar com qual nome? (coloque o tipo de arquivo, exemplo, .gif) \n")
+    nome = readline()
+    gif(anim,nome)
+end
