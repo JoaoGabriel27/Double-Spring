@@ -1,7 +1,6 @@
 include("Runge-Kutta-Friction.jl")
 
 m₁, m₂ = 1.0, 1.0
-δ₁, δ₂ = 0.1, 0.2
 μ₁, μ₂ = 0.01, 0.01 #Coeficients of friction of the first and second block
 g = 9.81 #Gravitational acceleration
 w₁ = 0.1
